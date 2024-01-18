@@ -43,8 +43,8 @@ public class Updater {
 				reader.close();
 			
 				if(newVersion > oldVersion) {
-					Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_PURPLE + "[Laliay Updater]" + " " + ChatColor.GREEN + "New update found!" + " " + ChatColor.YELLOW + newVersion);
-					Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_PURPLE + "[Laliay Updater]" + " " + ChatColor.GREEN + "Downloading...");
+					Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_PURPLE + "[Fays Updater]" + " " + ChatColor.GREEN + "New update found!" + " " + ChatColor.YELLOW + newVersion);
+					Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_PURPLE + "[Fays Updater]" + " " + ChatColor.GREEN + "Downloading...");
 					
 					url = new URL(dlLink);
 					con = url.openConnection();
@@ -58,8 +58,8 @@ public class Updater {
 				
 					out.close();
 					in.close();
-					Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_PURPLE + "[Laliay Updater]" + " " + ChatColor.GREEN + "Successfully updated!");
-					Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_PURPLE + "[Laliay Updater]" + " " + ChatColor.AQUA + "Please reload or restart your server.");
+					Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_PURPLE + "[Fays Updater]" + " " + ChatColor.GREEN + "Successfully updated!");
+					Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_PURPLE + "[Fays Updater]" + " " + ChatColor.AQUA + "Please reload or restart your server.");
 				}
 			} catch(IOException e) {
 				plugin.getLogger().log(Level.SEVERE, "Failed to auto update", e);
